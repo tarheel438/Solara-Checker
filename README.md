@@ -6,13 +6,12 @@ find the line: with open(r"" , "w") as f: # add your solara path here
 replace with ur actual solara path, like: with open(r"C:\Users\YourUsername\Solara\test_file.txt", "w") as f:
 
 
-Features:
-
-Continuous monitoring of Bootstrapper
-Network analysis
-File system monitoring
-Memory analysis
-DLL injection detection
-Registry analysis
-Exploit checking
-Performance monitoring
+features:
+continuous monitoring of bootstrapper
+network analysis
+file system monitoring
+memory analysis
+dll injection detection
+registry analysis
+exploit checking
+performance monitoring
