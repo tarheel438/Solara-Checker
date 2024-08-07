@@ -1,0 +1,7 @@
+psutil
+requests
+scapy
+watchdog
+pefile
+yara-python
+websocket-client
