@@ -7,6 +7,7 @@ replace with ur actual solara path, like: with open(r"C:\Users\YourUsername\Sola
 
 
 Features:
+
 Continuous monitoring of Bootstrapper
 Network analysis
 File system monitoring
