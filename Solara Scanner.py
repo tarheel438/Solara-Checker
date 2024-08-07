@@ -66,7 +66,7 @@ def scan_for_malware(process):
 
 def monitor_file_system():
     try:
-        path = r"C:\Users\godml\Downloads\SOLARA"
+        path = r""  # add your solara path here
         event_handler = FileChangeHandler()
         observer = Observer()
         observer.schedule(event_handler, path, recursive=True)
@@ -148,11 +148,11 @@ def check_stability():
 def check_filesystem_performance():
     try:
         start_time = time.time()
-        with open(r"C:\Users\godml\Downloads\SOLARA\test_file.txt", "w") as f:
+        with open(r"     " , "w") as f:  # add your solara path here
             f.write("A" * 1000000)
         end_time = time.time()
         print(f"Filesystem write time: {end_time - start_time} seconds")
-        os.remove(r"C:\Users\godml\Downloads\SOLARA\test_file.txt")
+        os.remove(r"") #add your solara path here
     except Exception as e:
         print(f"Error in check_filesystem_performance: {e}")
 
@@ -189,7 +189,7 @@ def main():
             process = check_bootstrapper()
             if not process:
                 print("Bootstrapper not running, waiting...")
-                time.sleep(5)  # Reduced wait time to 5 seconds
+                time.sleep(5)  
                 continue
             print("Scanning for vulnerabilities...")
             monitor_resources(process)
